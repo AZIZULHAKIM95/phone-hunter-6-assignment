@@ -75,6 +75,40 @@ const displaySearchResult = (fulldata, condition = 0) => {
         const div = document.createElement('div')
         div.innerHTML = `<button onclick="searchMobile(option=1)">Show More</button>`
         showmore.appendChild(div)
-
     }
+}
+
+
+// About Mobile Feature
+const displayMobiledetails = data => {
+    console.log(data)
+    const mobileDetails = document.getElementById('mobile-details')
+    mobileDetails.textContent = ''
+    const div = document.createElement('div')
+    div.classList.add('card')
+    div.innerHTML = `
+             <img src="${data.image}" class="card-img-top mx-auto w-50 mt-2" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">${data.name}</h4>
+                <p class="card-text">Main Featueres
+                    <ul>
+                        <li>Storage: ${data.mainFeatures.storage}</li>
+                        <li>Chipset: ${data.mainFeatures.chipset}</li>
+                        <li>Display: ${data.mainFeatures.displaySize}</li>
+                    </ul>
+                </p>
+                <p class="card-text">${data.releaseDate ? data.releaseDate : "No release date found"}</p>
+                <p class="card-text">Others
+                    <ul>
+                        <li>Bluetooth: ${data.others.Bluetooth}</li>
+                        <li>Gps: ${data.others.GPS}</li>
+                        <li>NFC: ${data.others.NFC}</li>
+                        <li>Radio: ${data.others.Radio}</li>
+                        <li>USB: ${data.others.USB}</li>
+                        <li>WLAN: ${data.others.WLAN}</li>
+                    </ul>
+                </p>
+            </div>
+        `
+    mobileDetails.appendChild(div)
 }
