@@ -93,7 +93,7 @@ const displayMobiledetails = data => {
                 <p class="card-text fw-bold">Main Featueres:
                     <ul>
                         <li>Storage: ${data.mainFeatures.storage}</li>
-                        <li>Chipset: ${data.mainFeatures.chipset}</li>
+                        <li>Chipset: ${data.mainFeatures.chipSet}</li>
                         <li>Display: ${data.mainFeatures.displaySize}</li>
                     </ul>
                 </p>
