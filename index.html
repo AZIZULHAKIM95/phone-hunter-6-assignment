@@ -13,11 +13,45 @@
 <body class="p-3 mb-2 bg-light container">
     <br>
 
+    <!-- Website Name -->
     <h1 class="text-center text-danger">Mobile Island</h1>
+    <br>
 
 
+    <!-- Search Button -->
+    <div class="input-group mb-3 w-50 mx-auto">
+        <input id="search-field" type="text" class="form-control" placeholder="Search Your Favourite Phone"
+            aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="searchMobile()" class="btn btn-secondary" type="button" id="button-search">Search</button>
+    </div>
 
 
+    <!-- Error Handle -->
+    <div id="error-1" class=" mx-auto w-25 fw-bolder text-danger">
+
+    </div>
+
+
+    <!-- Single Mobile Details -->
+    <div id="mobile-details" class="w-50 mx-auto">
+
+    </div>
+    <br>
+
+
+    <!-- All Mobile Search Result -->
+    <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+
+    </div>
+
+
+    <!-- Show More Button -->
+    <div id="showmore" class="row row-cols-1 row-cols-md-3 g-4">
+
+    </div>
+
+
+    <!-- Java Script Link -->
     <script src="js/api.js"></script>
 </body>
 
