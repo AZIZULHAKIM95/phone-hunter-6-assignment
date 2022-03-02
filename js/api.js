@@ -73,7 +73,7 @@ const displaySearchResult = (fulldata, condition = 0) => {
     showmore.innerHTML = ""
     if (!condition) {
         const div = document.createElement('div')
-        div.innerHTML = `<button onclick="searchMobile(option=1)">Show More</button>`
+        div.innerHTML = `<button onclick="searchMobile(option=1)" class="btn btn-success mt-5">Show More</button> `
         showmore.appendChild(div)
     }
 }
