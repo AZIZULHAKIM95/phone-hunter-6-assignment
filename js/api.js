@@ -90,15 +90,28 @@ const displayMobiledetails = data => {
              <img src="${data.image}" class="card-img-top mx-auto w-50 mt-2" alt="...">
             <div class="card-body">
                 <h4 class="card-title">${data.name}</h4>
-                <p class="card-text">Main Featueres
+                <p class="card-text fw-bold">Main Featueres:
                     <ul>
                         <li>Storage: ${data.mainFeatures.storage}</li>
                         <li>Chipset: ${data.mainFeatures.chipset}</li>
                         <li>Display: ${data.mainFeatures.displaySize}</li>
                     </ul>
                 </p>
-                <p class="card-text">${data.releaseDate ? data.releaseDate : "No release date found"}</p>
-                <p class="card-text">Others
+
+                <p class="card-text fw-bold">Release Date: 
+                    <ul>
+                      <li>${data.releaseDate ? data.releaseDate : "No release date found"}
+                      </li>
+                    </ul>
+                </p>
+
+                <p class="card-text fw-bold">Sensor: 
+                    <ul>
+                      <li>${data.mainFeatures.sensors}</li>
+                    </ul>
+                </p>
+
+                <p class="card-text fw-bold">Others:
                     <ul>
                         <li>Bluetooth: ${data.others.Bluetooth}</li>
                         <li>Gps: ${data.others.GPS}</li>
